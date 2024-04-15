@@ -1,0 +1,120 @@
+.nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(40, 40, 40);
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.nav-elements {
+    color: white;
+    display: inline-block;
+    padding-left: 40px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+    border-style: solid;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    cursor: pointer;  
+    transition: 0.1s;
+}
+.nav-elements:not(:last-child) {
+    border-right: 1px solid white;
+}
+
+.nav-elements:hover{
+    color: #fff;
+    text-shadow: 0 0 10px #fff,
+                 0 0 15px #fff;             
+}               
+
+@media (max-width: 768px) {
+    .navbar {
+        position: relative; /* Para que se vea la barra bien desde un dispositivo mobil */
+    }
+
+    .nav-elements {
+        display: block;
+        width: 100%;
+        border-right: none;
+    }
+}
+
+.robot1 {
+    vertical-align: middle;
+    width: 500px;
+}
+
+.main-text {
+    padding-left: 20px;
+    display: inline-block;
+    width: 300px;
+    vertical-align: middle;
+    font-size: 25px;
+    color: white;
+}
+
+.robot2 {
+    width: 300px;
+    vertical-align: middle;
+}
+
+.bottom-text {
+    display: inline-block;
+    vertical-align: middle;
+    width: 300px;
+    font-size: 20px;
+    color: white;
+}
+
+.main-body{
+    margin:auto;
+    width: 1000px;
+}
+.bottom-body{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    border-style:solid;
+    border-color: rbg(4, 44, 44);
+    border-width: 3px;
+    overflow: hidden;
+    position: relative;
+}
+
+.bottom-body > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*--text-align: center;--*/ /*--Opcional--*/
+}
+
+.bottom-body::before,
+.bottom-body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 6px; 
+    background-color: rgb(36, 36, 36); 
+}
+.bottom-body::before {
+    left: calc(33.333% - 1px);
+}
+.bottom-body::after {
+    right: calc(33.333% - 1px); 
+}
