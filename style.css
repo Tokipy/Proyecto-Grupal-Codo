@@ -37,7 +37,15 @@
     color: #fff;
     text-shadow: 0 0 10px #fff,
                  0 0 15px #fff;             
-}               
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
 
 @media (max-width: 768px) {
     .navbar {
@@ -70,11 +78,12 @@
     vertical-align: middle;
 }
 
+
 .bottom-text {
     display: inline-block;
     vertical-align: middle;
     width: 300px;
-    font-size: 20px;
+    font-size: 1em; 
     color: white;
 }
 
@@ -93,7 +102,7 @@
     border-color: rbg(4, 44, 44);
     border-width: 3px;
     overflow: hidden;
-    position: relative;
+    position: relative; 
 }
 
 .bottom-body > div {
@@ -110,7 +119,7 @@
     top: 0;
     bottom: 0;
     width: 6px; 
-    background-color: rgb(36, 36, 36); 
+    background-color: rgb(36, 36, 36);   
 }
 .bottom-body::before {
     left: calc(33.333% - 1px);
@@ -118,3 +127,43 @@
 .bottom-body::after {
     right: calc(33.333% - 1px); 
 }
+
+footer {
+    background-color: #555555;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    bottom: 0;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-media img {
+    width: 60px; /* Adjust the size as needed */
+    height: 60px; /* Adjust the size as needed */
+    vertical-align: middle;
+}
+/* .social-media-buttons {
+    margin-top: 10px;
+}
+
+.social-media-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.social-media-button:hover {
+    background-color: #ccc;
+} */
