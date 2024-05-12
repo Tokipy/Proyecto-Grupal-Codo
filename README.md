@@ -1,2 +1,1 @@
-Segunda version 0.2. 
-Se agrego el html del formulario y el footer con redes sociales.
+0.3 Actualizacion del grid en index, footer e imagenes
