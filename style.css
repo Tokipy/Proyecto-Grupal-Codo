@@ -1,3 +1,11 @@
+body{
+    background-color: aliceblue;
+    margin: 0;
+    background-image: url(img/abstract-technology-background-free-vector.jpg);
+    background-size: cover;
+    
+}
+
 .nav-bar {
     position: fixed;
     top: 0;
@@ -51,7 +59,7 @@ nav a {
     .navbar {
         position: relative; /* Para que se vea la barra bien desde un dispositivo mobil */
     }
-
+    
     .nav-elements {
         display: block;
         width: 100%;
@@ -59,25 +67,35 @@ nav a {
     }
 }
 
+.main-body{
+    margin:auto;
+    max-width: 1000px;  
+    width: 1000px;
+}
+
 .robot1 {
     vertical-align: middle;
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
 }
 
 .main-text {
     padding-left: 20px;
     display: inline-block;
-    width: 300px;
+    width: calc(100% - 540px);
     vertical-align: middle;
     font-size: 25px;
     color: white;
 }
-
+/*--
 .robot2 {
-    width: 300px;
+    width: 10px;
     vertical-align: middle;
+    flex-shrink: 0;
+    min-width: 80%;
+    min-height: 80%
 }
-
+--*/
 
 .bottom-text {
     display: inline-block;
@@ -87,10 +105,50 @@ nav a {
     color: white;
 }
 
-.main-body{
-    margin:auto;
-    width: 1000px;
+
+
+.bottom-body{
+    --gap: 16px;
+    --num-cols: 3;
+    --row-height: 400px;
+    box-sizing: border-box;
+    padding: var(--gap);
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
 }
+
+.bottom-body > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .5s;
+    border-radius: 15px;
+}
+
+.bottom-body > img:hover{
+    transform: scale(1.05);
+}
+
+
+@media (max-width: 1024px){
+    .bottom-body{
+        --num-cols: 2;
+        --row-height: 200px;
+    }
+    .main-body {
+        max-width: 100%; /* Set max-width to 100% for smaller screens */
+        width: auto; /* Reset width to auto */
+    }
+
+    .main-text {
+        width: 100%; /* Set text width to 100% for smaller screens */
+        padding-left: 0; /* Remove padding for smaller screens */
+        text-align: center; /* Center text on smaller screens */
+    }
+}
+/*--
 .bottom-body{
     margin-top: 20px;
     display: grid;
@@ -101,7 +159,7 @@ nav a {
     border-style:solid;
     border-color: rbg(4, 44, 44);
     border-width: 3px;
-    overflow: hidden;
+    overflow: visible;
     position: relative; 
 }
 
@@ -109,7 +167,6 @@ nav a {
     display: flex;
     justify-content: center;
     align-items: center;
-    /*--text-align: center;--*/ /*--Opcional--*/
 }
 
 .bottom-body::before,
@@ -119,25 +176,37 @@ nav a {
     top: 0;
     bottom: 0;
     width: 6px; 
-    background-color: rgb(36, 36, 36);   
+    background-color: rgb(0, 0, 0);   
 }
 .bottom-body::before {
     left: calc(33.333% - 1px);
 }
 .bottom-body::after {
     right: calc(33.333% - 1px); 
-}
+} --*/
 
 footer {
-    background-color: #555555;
-    padding: 20px;
-    text-align: center;
-    position: sticky;
+    position: relative;
+    left: 0;
     bottom: 0;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.foot-text{
+    font-size: 40px;
+}
+
+
 .social-media {
-    margin-top: 10px;
+    margin-top: 0px;
 }
 
 .social-media a {

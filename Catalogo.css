@@ -1,3 +1,10 @@
+body{
+    background-color: aliceblue;
+    margin: 0;
+    background-image: url(img/abstract-technology-background-free-vector.jpg);
+    background-size: cover; 
+}
+
 .nav-bar {
     position: fixed;
     top: 0;
@@ -55,15 +62,17 @@ body{
     margin: 0;
     padding: 0;
     font-weight: 400;
-       font-size: 40px;
+    font-size: 40px;
 }
 
 
 h1{
+    margin-top: 45px;
     font-weight: 400;
     text-align: center;
     padding: 20px 0;
     font-size: 40px;
+    color: white;
 }
 
 img{
@@ -89,16 +98,34 @@ img{
 }
 
 
+.formulario{
+    display: inline-block;
+}
+.robotform{
+    display: inline-block;
+}
+
 footer {
-    background-color: #555555;
-    padding: 20px;
-    text-align: center;
-    position: sticky;
+    position: relative;
+    left: 0;
     bottom: 0;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot-text{
+    font-size: 40px;
 }
 
 .social-media {
-    margin-top: 10px;
+    margin-top: 0px;
 }
 
 .social-media a {
@@ -107,7 +134,7 @@ footer {
 }
 
 .social-media img {
-    width: 60px; /* Adjust the size as needed */
-    height: 60px; /* Adjust the size as needed */
+    width: 60px; 
+    height: 60px;
     vertical-align: middle;
 }
