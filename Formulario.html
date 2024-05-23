@@ -1,81 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Información de contacto</title>
-    <link rel="stylesheet" href="Catalogo.css">
+    <link rel="stylesheet" href="iohome.css">
+    <link rel="shortcut icon" href="./img/microchip-solid.svg" type="image/x-icon">
 </head>
+
 <body>
-    <main>
 
-        <nav>
-            <ul class="nav-bar">
-                <li class="nav-elements"><a href="index.html">Inicio</a></li>
-                <li class="nav-elements"><a>Galería</a></li>
-                <li class="nav-elements"><a>Catalogo</a></li>
-                <li class="nav-elements"><a href="Formulario.html">Información de contacto</a></li>
-            </ul>
-        </nav>
+    <nav>
+        <ul class="nav-bar">
+            <li class="nav-elements"><a href="index.html">Inicio</a></li>
+            <li class="nav-elements"><a href="./Galeria.html">Galería</a></li>
+            <li class="nav-elements"><a href="catalogo.html">Catalogo</a></li>
+            <li class="nav-elements"><a href="Formulario.html">Información de contacto</a></li>
+        </ul>
+    </nav>
+
+    <div class="contact_form">
+
+        <div class="formulario">
+            <h1>Formulario de contacto</h1>
+            <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+
+            <br>
+
+            <img src="./img/Contactanos.jpeg" alt="contacto_robot" class="registro__picture">
 
 
+            <form>
+                <div>
+                    <label for="nombre">Nombre *</label>
+                    <input type="text" id="nombre">
+                </div>
 
-        <h1>Bot.Contactanos</h1>
+                <div>
+                    <label for="email">Email *</label>
+                    <input type="email" id="email">
+                </div>
 
-        
-        <h3>Registro</h3>
-        <div clas="formbody">
-            <div class="formulario">
-                <form action="./show_data.html">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" size="30">
-                    <br>
-                    <label for="apellido">Dirección:</label>
-                    <input type="text" name="direccion" id="direccion" placeholder="Ingrese su domicilio" size="30">
-                    <br>
-                    <label for="CP">Código postal:</label>
-                    <input type="number" name="CP" id="CP" placeholder="Ingrese su codigo postal">
-                    <br>
-                    <label for="e-mail">E-mail:</label>
-                    <input type="email" name="e-mail" id="e-mail" placeholder="Ingrese su e-mail">
-                    <br>
-                    <label for="Tel">Teléfono:</label>
-                    <input name="Tel" id="Tel">
-                    <br>
-        
-                    <label for="comentarios">Comentarios:</label>
-                    <br>
-                    <textarea name="comentarios" id="comentarios" cols="20" rows="10"></textarea>
-                    <br>
-                    <input type="submit" value="Enviar">
-                </form>
+                <div>
+                    <label for="telefono">Teléfono *</label>
+                    <input type="email" id="telefono">
+                </div>
+
+                <div>
+                    <label for="interes">Interesado en</label><br>
+                    <input type="checkbox" id="interes" name="Limpieza" value="Limpieza">
+                    <label for="interes"> Robot de limpieza</label><br>
+                
+                    <input type="checkbox" id="Bot1" name="Cuidado" value="Cuidado">
+                    <label for="Bot1"> Robot de cuidado</label><br>
+                
+                    <input type="checkbox" id="Bot2" name="Cocina" value="Cocina">
+                    <label for="Bot2"> Robot cocina</label><br>
+                </div>
+                
+                <input type="submit" onclick="return enviarFormulario()" value="Enviar">
+
+            </form>
+            <div id="error">
+
             </div>
-            <div class="robotform">
-                <img src="img/Contactanos.jpeg" alt="contactanos">
-            </div>
+            <span class="obligatorio"> * </span>los campos son obligatorios.
         </div>
 
+
+
+
+        <br>
         <h2>Sucursal</h2>
+        <br>
+        <br>
+
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.833870170976!2d-58.37715411672918!3d-34.608362187987225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccadb57fd1e5f%3A0xcc737c4eb0a8614b!2sPlaza%20de%20Mayo!5e0!3m2!1ses!2sar!4v1713205346089!5m2!1ses!2sar"
-            width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy"
+            width="400" height="200" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe> <br>
 
-  
 
 
+        <div class="logoformulario">
+            <div class="io_home">
+                <a href="./index.html" class="io_home"><img src="./img/IO.Home.jpeg" alt="Logo sitio"></a>
+            </div>
+        </div>
 
-    </main>
+    </div>
 
     <footer>
+        <div>
+            <p class="foot-text">Siguenos en nuestras redes!</p>
+        </div>
         <div class="social-media">
-            <a href="#" class="facebook-foot"><img src="img/facebook_2168281.png"></a>
-            <a href="#" class="insta-foot"><img src="img/instagram_733614.png"></a>
-            <a href="#" class="twitter-foot"><img src="img/twitter_733635.png"></a>
+            <a href="https://www.facebook.com/" target="_blank" class="facebook-foot"><img
+                    src="img/facebook_2168281.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/" target="_blank" class="insta-foot"><img src="img/instagram_733614.png"
+                    alt="Instagram"></a>
+            <a href="https://x.com/" target="_blank" class="twitter-foot"><img src="img/twitter_733635.png"
+                    alt="Twitter"></a>
         </div>
     </footer>
-    
 
+    <script src="iohome.js"></script>
 
 </body>
+
 </html>

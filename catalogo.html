@@ -4,14 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>io.home</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Micro+5+Charted&family=Raleway:wght@300;400;700&family=Salsa&family=Ubuntu+Sans+Mono:ital,wght@0,500;1,500&display=swap"
-        rel="iohome">
+    <title>Catalogo</title>
     <link rel="shortcut icon" href="./img/microchip-solid.svg" type="image/x-icon">
     <link rel="stylesheet" href="iohome.css">
+    <script defer src="anim.js"></script>
 </head>
 
 <body>
@@ -25,27 +21,41 @@
         </ul>
     </nav>
 
-    <div>
-        <div class="main-body">
-            <p class="main-text">
-                Somos IO home, llegamos a dar innovación a los hogares, a facilitar el día a día.
-                En nuestra galeria de robotica podrás encontrar desde cocineros hasta perros paseadores, nuestro
-                compromiso es con tus necesidades.
-                Animate a conocernos un poco más, conoce nuestra propuesta y no dudes en contactarnos si es de tu
-                interes alguno de los articulos de robotica.
-                Somos robotica al servicio del hombre.
-            </p>
-            <img class="robot1" src="img/IO.Home.jpeg" alt="Logo del sitio">
-        </div>
 
-        <div class="bottom-body">
-            <img src="img/robot-limpieza2.jpeg" alt="Robot limpieza">
-            <img src="img/robot-cocina.1jpeg_-_copia.jpeg" alt="Robot cocina">
-            <img src="img/perro-robot-guia.1jpeg.jpeg" alt="Robot perro">
+    <div class="store-container">
+        <div class="store-item">
+            <img src="img/perro-robot-guia.1jpeg.jpeg" alt="Item 1">
+            <h2>Perro Inteligente</h2>
+            <p>$10.00</p>
+        </div>
+        <div class="store-item">
+            <img src="img/robot-cocina.1jpeg_-_copia.jpeg" alt="Item 2">
+            <h2>Robots ayudantes de cocina</h2>
+            <p>$20.00</p>
+        </div>
+        <div class="store-item">
+            <img src="img/robot-cocina2.jpeg" alt="Item 3">
+            <h2>Robot Chef</h2>
+            <p>$30.00</p>
+        </div>
+        <div class="store-item">
+            <img src="img/robot-limpieza2.jpeg" alt="Item 4">
+            <h2>Robot de limpieza</h2>
+            <p>$40.00</p>
         </div>
     </div>
 
-    
+    <div class="center-container">
+        <div class="exchange-rates" id="exchange-rates">
+            <h2>Tipos de cambio</h2>
+            <label for="currency-select">Elija una moneda:</label>
+            <select id="currency-select">
+
+            </select>
+            <div id="selected-rate" class="rate-box"></div>
+        </div>
+    </div>
+    <!-- Footer -->
     <footer>
         <div>
             <p class="foot-text">Siguenos en nuestras redes!</p>
@@ -59,8 +69,7 @@
                     alt="Twitter"></a>
         </div>
     </footer>
-
-
+    <script src="script.js"></script>
 </body>
 
 </html>
