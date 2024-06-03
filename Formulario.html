@@ -1,112 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Información de contacto</title>
-    <link rel="stylesheet" href="iohome.css">
-    <link rel="shortcut icon" href="./img/microchip-solid.svg" type="image/x-icon">
-</head>
+    <link rel="stylesheet" href="iohome.css" />
+    <link
+      rel="shortcut icon"
+      href="./img/microchip-solid.svg"
+      type="image/x-icon"
+    />
+  </head>
 
-<body>
-
+  <body>
     <nav>
-        <ul class="nav-bar">
-            <li class="nav-elements"><a href="index.html">Inicio</a></li>
-            <li class="nav-elements"><a href="./Galeria.html">Galería</a></li>
-            <li class="nav-elements"><a href="catalogo.html">Catalogo</a></li>
-            <li class="nav-elements"><a href="Formulario.html">Información de contacto</a></li>
-        </ul>
+      <ul class="nav-bar">
+        <li class="nav-elements"><a href="index.html">Inicio</a></li>
+        <li class="nav-elements"><a href="./Galeria.html">Galería</a></li>
+        <li class="nav-elements"><a href="catalogo.html">Catalogo</a></li>
+        <li class="nav-elements">
+          <a href="Formulario.html">Información de contacto</a>
+        </li>
+      </ul>
     </nav>
 
     <div class="contact_form">
+      <div class="formulario">
+        <h1>Formulario de contacto</h1>
+        <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
 
-        <div class="formulario">
-            <h1>Formulario de contacto</h1>
-            <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
-
-            <br>
-
-            <img src="./img/Contactanos.jpeg" alt="contacto_robot" class="registro__picture">
-
-
-            <form>
-                <div>
-                    <label for="nombre">Nombre *</label>
-                    <input type="text" id="nombre">
-                </div>
-
-                <div>
-                    <label for="email">Email *</label>
-                    <input type="email" id="email">
-                </div>
-
-                <div>
-                    <label for="telefono">Teléfono *</label>
-                    <input type="email" id="telefono">
-                </div>
-
-                <div>
-                    <label for="interes">Interesado en</label><br>
-                    <input type="checkbox" id="interes" name="Limpieza" value="Limpieza">
-                    <label for="interes"> Robot de limpieza</label><br>
-                
-                    <input type="checkbox" id="Bot1" name="Cuidado" value="Cuidado">
-                    <label for="Bot1"> Robot de cuidado</label><br>
-                
-                    <input type="checkbox" id="Bot2" name="Cocina" value="Cocina">
-                    <label for="Bot2"> Robot cocina</label><br>
-                </div>
-                
-                <input type="submit" onclick="return enviarFormulario()" value="Enviar">
-
-            </form>
-            <div id="error">
-
-            </div>
-            <span class="obligatorio"> * </span>los campos son obligatorios.
-        </div>
-
-
-
-
-        <br>
-        <h2>Sucursal</h2>
-        <br>
-        <br>
-
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.833870170976!2d-58.37715411672918!3d-34.608362187987225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccadb57fd1e5f%3A0xcc737c4eb0a8614b!2sPlaza%20de%20Mayo!5e0!3m2!1ses!2sar!4v1713205346089!5m2!1ses!2sar"
-            width="400" height="200" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe> <br>
-
-
-
-        <div class="logoformulario">
-            <div class="io_home">
-                <a href="./index.html" class="io_home"><img src="./img/IO.Home.jpeg" alt="Logo sitio"></a>
-            </div>
-        </div>
-
-    </div>
-
-    <footer>
+        <br />
+        <div class="form-container">
+       
+          <img
+            src="./img/Contactanos.jpeg"
+            alt="contacto_robot"
+            class="registro__picture"
+          />
+       
         <div>
-            <p class="foot-text">Siguenos en nuestras redes!</p>
+          <form>
+            <div>
+              <label for="nombre">Nombre *</label>
+              <input type="text" id="nombre" />
+            </div>
+
+            <div>
+              <label for="email">Email *</label>
+              <input type="email" id="email" />
+            </div>
+
+            <div>
+              <label for="telefono">Teléfono *</label>
+              <input type="email" id="telefono" />
+            </div>
+
+            <div>
+              <label for="interes">Interesado en</label><br />
+              <input
+                type="checkbox"
+                id="interes"
+                name="Limpieza"
+                value="Limpieza"
+              />
+              <label for="interes"> Robot de limpieza</label><br />
+
+              <input type="checkbox" id="Bot1" name="Cuidado" value="Cuidado" />
+              <label for="Bot1"> Robot de cuidado</label><br />
+
+              <input type="checkbox" id="Bot2" name="Cocina" value="Cocina" />
+              <label for="Bot2"> Robot cocina</label><br />
+            </div>
+
+            <input
+              type="submit"
+              onclick="return enviarFormulario()"
+              value="Enviar"
+            />
+          </form>
+          <div id="error"></div>
+          <span class="obligatorio"> * </span>los campos son obligatorios.
         </div>
-        <div class="social-media">
-            <a href="https://www.facebook.com/" target="_blank" class="facebook-foot"><img
-                    src="img/facebook_2168281.png" alt="Facebook"></a>
-            <a href="https://www.instagram.com/" target="_blank" class="insta-foot"><img src="img/instagram_733614.png"
-                    alt="Instagram"></a>
-            <a href="https://x.com/" target="_blank" class="twitter-foot"><img src="img/twitter_733635.png"
-                    alt="Twitter"></a>
-        </div>
+      </div>
+    </div>
+</div>
+    <footer>
+      <div>
+        <p class="foot-text">Siguenos en nuestras redes!</p>
+      </div>
+      <div class="social-media">
+        <a
+          href="https://www.facebook.com/"
+          target="_blank"
+          class="facebook-foot"
+          ><img src="img/facebook_2168281.png" alt="Facebook"
+        /></a>
+        <a href="https://www.instagram.com/" target="_blank" class="insta-foot"
+          ><img src="img/instagram_733614.png" alt="Instagram"
+        /></a>
+        <a href="https://x.com/" target="_blank" class="twitter-foot"
+          ><img src="img/twitter_733635.png" alt="Twitter"
+        /></a>
+      </div>
     </footer>
 
     <script src="iohome.js"></script>
-
-</body>
-
+  </body>
 </html>
