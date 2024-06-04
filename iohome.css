@@ -15,18 +15,31 @@ body {
     margin: 0;
     background-image: url(img/abstract-technology-background-free-vector.jpg);
     background-size: cover;
+    min-height: 100vh
 
+}
 
+html, body {
+    box-sizing: border-box;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    box-sizing: border-box;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
     font-weight: 500;
 }
 
-footer {
-    position: fixed;
-    bottom: 0;
-
+nav, footer {
+    flex-grow: 0;
+    flex-shrink: 0;
 }
 
 .nav-bar {
@@ -34,7 +47,7 @@ footer {
     top: 0;
     left: 0;
     width: 100%;
-    background-color:#333;
+    background-color: #333;
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -304,13 +317,10 @@ nav a {
 }
 
 footer {
-    position: relative;
-    left: 0;
-    bottom: 0;
     padding-top: 1px;
     padding-bottom: 1px;
     width: 100%;
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(216, 216, 216);
     color: rgb(0, 0, 0);
     text-align: center;
     display: flex;
@@ -469,25 +479,23 @@ button p {
 
 /* Catalogo Flex */
 .store-container {
-    margin-top: 30px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-around;
-    padding: 0;
+    flex-grow: 1;
 }
 
 .store-item {
     background-color: #f4f4f4;
     border: 1px solid #ccc;
     border-radius: 5px;
-    margin: 1em;
+    margin: 1em 0;
     padding: 1em;
     text-align: center;
     width: 100%;
     max-width: 300px;
-    box-sizing: border-box;
 }
 
 .store-item img {
