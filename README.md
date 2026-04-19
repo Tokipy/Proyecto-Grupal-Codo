@@ -31,3 +31,6 @@ Completed as a practice project. Possible future improvements include enhanced U
 Proyecto grupal de desarrollo web que simula una tienda online ficticia de robots, utilizando HTML, CSS y JavaScript.
 Incluye múltiples páginas, animaciones básicas en productos y una API para conversión de moneda en tiempo real mediante Fetch.
 Desarrollado como práctica para aprender estructura web, separación de tecnologías y trabajo en equipo.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/a4e9d8ba-d56f-4173-acc9-e3b4f338d142" />
+
